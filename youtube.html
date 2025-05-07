@@ -3,7 +3,19 @@
 
 <head>
     <title>Youtube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <style>
+        p {
+            font-family: Roboto, Arial;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
         .thumbnail {
             width: 290px;
             display: block;
@@ -14,16 +26,51 @@
         }
 
         .video-title {
-            width: 300px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 12px;
         }
 
         .video-preview {
             width: 300px;
             display: inline-block;
             vertical-align: top;
-            margin-right: 20px;
+            margin-right: 15px;
+        }
+
+        .channel-picture {
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+        }
+
+        .video-info {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .profile-picture {
+            width: 40px;
+            border-radius: 50px;
+        }
+
+        .thumbnail-row {
+            margin-bottom: 20px;
+        }
+
+        .video-author,
+        .video-stats {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+        }
+
+        .video-author {
+            margin-bottom: 4px;
         }
     </style>
+
+
 </head>
 
 <body>
@@ -31,29 +78,61 @@
 
 
     <div class="video-preview">
-        <img class="thumbnail" src="thumbnail/hqdefault.avif">
-        <p class="video-title">
-            3D Survival Game Tutorial &#124; Unity &#124; Part 1: Getting Started &#38; Player Movement
-        </p>
-        <p class="video-author">
-            Mike&#39;s Code
-        </p>
-        <p class="video-stats">
-            427 K views &#183; 3 years ago
-        </p>
+
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hqdefault.avif">
+        </div>
+
+        <div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-profile/channels4_profile (1).jpg">
+
+            </div>
+
+            <div class="video-info">
+
+                <p class="video-title">
+                    3D Survival Game Tutorial &#124; Unity &#124; Part 1: Getting Started &#38; Player Movement
+                </p>
+                <p class="video-author">
+                    Mike&#39;s Code
+                </p>
+                <p class="video-stats">
+                    427 K views &#183; 3 years ago
+                </p>
+
+            </div>
+
+        </div>
+
+
     </div>
 
     <div class="video-preview">
-        <img class="thumbnail" src="thumbnail/hqdefault (1).avif">
-        <p class="video-title">
-            Memories
-        </p>
-        <p class="video-author">
-            Thutmose
-        </p>
-        <p class="video-stats">
-            20 mil. views &#183; 6 years ago
-        </p>
+
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hqdefault (1).avif">
+        </div>
+
+        <div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-profile/channels4_profile.jpg">
+            </div>
+
+            <div class="video-info">
+                <p class="video-title">
+                    Memories
+                </p>
+                <p class="video-author">
+                    Thutmose
+                </p>
+                <p class="video-stats">
+                    20 mil. views &#183; 6 years ago
+                </p>
+            </div>
+
+        </div>
+
     </div>
 
 </body>
