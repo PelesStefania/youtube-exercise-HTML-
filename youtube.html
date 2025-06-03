@@ -17,8 +17,7 @@
         }
 
         .thumbnail {
-            width: 290px;
-            display: block;
+            width: 100%;
         }
 
         .search-bar {
@@ -32,23 +31,13 @@
             margin-bottom: 12px;
         }
 
-        .video-preview {
-            width: 300px;
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 15px;
+
+        .video-info-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr;
         }
 
-        .channel-picture {
-            display: inline-block;
-            width: 50px;
-            vertical-align: top;
-        }
 
-        .video-info {
-            display: inline-block;
-            width: 200px;
-        }
 
         .profile-picture {
             width: 40px;
@@ -68,6 +57,13 @@
         .video-author {
             margin-bottom: 4px;
         }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 40px;
+        }
     </style>
 
 
@@ -77,61 +73,182 @@
     <input class="search-bar" type="textbox" placeholder="Search">
 
 
-    <div class="video-preview">
+    <div class="video-grid">
 
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnail/hqdefault.avif">
-        </div>
+        <div class="video-preview">
 
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="channel-profile/channels4_profile (1).jpg">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/hqdefault.avif">
+            </div>
+
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-profile/channels4_profile (1).jpg">
+                </div>
+
+                <div class="video-info">
+
+                    <p class="video-title">
+                        3D Survival Game Tutorial &#124; Unity &#124; Part 1: Getting Started &#38; Player Movement
+                    </p>
+                    <p class="video-author">
+                        Mike&#39;s Code
+                    </p>
+                    <p class="video-stats">
+                        427 K views &#183; 3 years ago
+                    </p>
+
+                </div>
 
             </div>
 
-            <div class="video-info">
 
-                <p class="video-title">
-                    3D Survival Game Tutorial &#124; Unity &#124; Part 1: Getting Started &#38; Player Movement
-                </p>
-                <p class="video-author">
-                    Mike&#39;s Code
-                </p>
-                <p class="video-stats">
-                    427 K views &#183; 3 years ago
-                </p>
+        </div>
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/hqdefault (1).avif">
+            </div>
+
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-profile/channels4_profile.jpg">
+                </div>
+
+                <div class="video-info">
+                    <p class="video-title">
+                        Memories
+                    </p>
+                    <p class="video-author">
+                        Thutmose
+                    </p>
+                    <p class="video-stats">
+                        20 mil. views &#183; 6 years ago
+                    </p>
+                </div>
 
             </div>
 
         </div>
 
+        <div class="video-preview">
 
-    </div>
-
-    <div class="video-preview">
-
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnail/hqdefault (1).avif">
-        </div>
-
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="channel-profile/channels4_profile.jpg">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/hq720.avif">
             </div>
 
-            <div class="video-info">
-                <p class="video-title">
-                    Memories
-                </p>
-                <p class="video-author">
-                    Thutmose
-                </p>
-                <p class="video-stats">
-                    20 mil. views &#183; 6 years ago
-                </p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-profile/unnamed.jpg">
+                </div>
+
+                <div class="video-info">
+
+                    <p class="video-title">
+
+                        The Motans &#8722; Fata din vis (cover Compact) &#124; Versuri
+                    </p>
+                    <p class="video-author">
+                        Denis
+                    </p>
+                    <p class="video-stats">
+                        9 mil views &#183; 7 years ago
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/hqdefault2.avif">
+            </div>
+
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-profile/channels5_profile.jpg">
+                </div>
+
+                <div class="video-info">
+                    <p class="video-title">
+                        Robin and the Backstabbers &#8722; Soare cu dinti (Official video)
+                    </p>
+                    <p class="video-author">
+                        Robin and the Backstabbers
+                    </p>
+                    <p class="video-stats">
+                        2,6 mil. views &#183; 16 years ago
+                    </p>
+                </div>
+
             </div>
 
         </div>
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/hq3.avif">
+            </div>
+
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-profile/channels6_profile.jpg">
+                </div>
+
+                <div class="video-info">
+
+                    <p class="video-title">
+                        om la lună &#8722; Valurile (Official Lyric Video)
+                    </p>
+                    <p class="video-author">
+                        om la lună
+                    </p>
+                    <p class="video-stats">
+                        92 K views &#183; 5 years ago
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/hqdefault3.avif">
+            </div>
+
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-profile/channels7_profile.jpg">
+                </div>
+
+                <div class="video-info">
+                    <p class="video-title">
+
+                        Healthy Brownies (No Flour & Date-Sweetened!)
+                    </p>
+                    <p class="video-author">
+
+                        Detoxinista
+                    </p>
+                    <p class="video-stats">
+                        148 K views &#183; 1 years ago
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
 
     </div>
 
